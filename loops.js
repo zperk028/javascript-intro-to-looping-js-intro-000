@@ -16,16 +16,15 @@ function whileLoop(n) {
   return 'done'
 }
 
-
-
-
-function doWhileLoop(array) {
-  function maybeTrue() {
-    return Math.random() >= 0.5
-  }
-
-  do {
-    array.pop();
-  } while (array.length > -1 && maybeTrue());
-    console.log("I run once regardless.")
+function doWhileLoop(num) {
+  let i = 0;
+  function incrementVariable() {
+    i = i + 1;
+    return i;
 }
+
+do {
+} while (incrementVariable() < num)
+}
+
+  
